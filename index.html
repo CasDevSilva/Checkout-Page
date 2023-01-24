@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5d1fa63e08.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./images/devchallenges.png" type="image/x-icon">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <main>
+        <h1>Checkout</h1>
+        <article class="form">
+            <form action="">
+                <section class="form__info">
+                    <h2>Contact infomation</h2>
+                    <label for="email">E-mail</label>
+                    <div class="icon__input">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" placeholder="Enter your Email" name="email" id="email">
+                    </div>
+                    <label for="phone">Phone</label>
+                    <div class="icon__input">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <input type="text" placeholder="Enter your phone..." name="phone" id="phone">
+                    </div>
+                </section>
+                <section class="shipping__info">
+                    <h2>Shipping address</h2>
+                    <label for="name">Full name</label>
+                    <div class="icon__input">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <input type="text" placeholder="Your name" name="name" id="name">
+                    </div>
+                    <label for="address">Address</label>
+                    <div class="icon__input">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <input type="text" placeholder="Your address.." name="address" id="address">
+                    </div>
+                    <label for="city">City</label>
+                    <div class="icon__input">
+                        <span><i class="fa-solid fa-city"></i></span>
+                        <input type="text" placeholder="Your city" name="city" id="city">
+                    </div>
+                    <div class="info__place">
+                        <div class="place__country">
+                            <label for="country">Country</label>
+                            <select name="country" id="country">
+                                <option value="">Your Country</option>
+                                <option value="">Alemania</option>
+                                <option value="">Belgica</option>
+                                <option value="">Colombia</option>
+                                <option value="">Ecuador</option>
+                                <option value="">Portugal</option>
+                            </select>
+                        </div>
+                        <div class="place__postal">
+                            <label for="postalCode">Postal Code</label>
+                            <div class="icon__input">
+                                <span><i class="fa-solid fa-location-dot"></i></span>
+                                <input type="text" placeholder="Your postal code.."  name="postalCode" id="postalCode">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="save">
+                        <input type="checkbox" name="saveInfo" id="saveInfo">
+                        <label for="saveInfo">Save this information for next time</label>
+                    </div>
+                    <input type="submit" value="Continuar">
+                </section>
+            </form>
+        </article>
+        <article class="product__info">
+            <div class="product">
+                <img src="./images/photo1.png" alt="">
+                <div class="description">
+                    <p>Vintage Backbag</p>
+                    <div class="price">
+                        <p>$54.99</p>
+                        <p>$94.99</p>
+                    </div>
+                    <div class="product__count">
+                        <span class="icon"><i class="fa-solid fa-minus"></i></span>
+                        <span class="nro__product">1</span>
+                        <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./images/photo2.png" alt="">
+                <div class="description">
+                    <p>Levi Shoes</p>
+                    <div class="price">
+                        <p>$74.99</p>
+                        <p>$124.99</p>
+                    </div>
+                    <div class="product__count">
+                        <span class="icon"><i class="fa-solid fa-minus"></i></span>
+                        <span class="nro__product">1</span>
+                        <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <p class="shipping">Shipping<span>$19</span></p>
+            <div class="line"></div>
+            <p class="total">Total<span>$148.98</span></p>
+        </article>
+    </main>
+    <footer>
+        <p>created by <a href="https://github.com/CasDevSilva" target="_blank">CasDevSilva</a> - devChallenges.io</p>
+    </footer>
+</body>
+</html>
